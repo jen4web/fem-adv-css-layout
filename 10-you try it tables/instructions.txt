@@ -1,0 +1,21 @@
+CHAPTER 10: YOU TRY IT RESPONSIVE TABLES
+
+In the "begin" folder, you'll find a new page with some information about the planets.
+
+Apply your new table knowledge to make this table responsive.
+
+HINTS:
+
+- Remember there's PAGE layout and TABLE layout. Both are responsive. The trick here is to combine them so that everything works correctly.
+
+- That means you may need to override some of the "inside" page layout settings to get this to work!
+
+- Suggested approach:
+
+a. Determine where the right column can be next to the table and where it needs to move under the table. Style appropriately in layout.css.
+
+b. Make the table stretch fully across the page as soon as you start to wrap the <aside> underneath the table.
+
+c. When the table no longer stretches across the page, now disassemble it into a report.
+
+

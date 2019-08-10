@@ -1,0 +1,12 @@
+CHAPTER 6: INSIDE PAGE LAYOUT
+
+I've given you book.html, an inside page layout for the website. It has its own stylesheet, inside.css. This stylesheet is purely "pretty" stuff -- there's nothing in it pertaining to layout.
+
+Go back to layout.css and see if you can edit this stylesheet to apply to the book.html page.
+
+HINTS:
+
+- Where are the flex containers/parents and the flex items/children?
+
+- What layouts do you want at each dimension? How do they change? 
+

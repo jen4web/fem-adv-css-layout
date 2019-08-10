@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/fb7f6f30e4.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Nobile:400,500|Open+Sans&display=swap" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/nav.css" rel="stylesheet">
+    <link href="css/layout.css" rel="stylesheet">
+    <link href="css/inside.css" rel="stylesheet">
+    <link href="css/type.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
+    <title>LayOut Times: Share a resource</title>
+</head>
+
+<body id="inside">
+    <header>
+        <div class="row">
+            <a href="#main-menu" id="main-menu-toggle" class="menu-toggle" aria-label="Open main menu">
+                <span class="sr-only">Open main menu</span>
+                <span class="fa fa-bars" aria-hidden="true"></span>
+            </a>
+            <div class="logo">
+                <h1><i class="fas fa-paint-brush"></i> LayOut Times</h1>
+                <h2>Your Web Design Destination</h2>
+            </div>
+        </div>
+        <nav id="main-menu" class="main-menu" aria-label="Main menu">
+            <a href="#main-menu-toggle" id="main-menu-close" class="menu-close" aria-label="Close main menu">
+                <span class="sr-only">Close main menu</span>
+                <span class="fa fa-close" aria-hidden="true"></span>
+            </a>
+            <ul>
+                <li><a href="#">CSS Resources</a></li>
+                <li><a href="#">Design</a></li>
+                <li><a href="#">Videos</a></li>
+                <li><a href="#">Social Media</a></li>
+                <li><a href="#">Inspiration</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Top Talent</a></li>
+            </ul>
+        </nav>
+       <a href="#main-menu-toggle" class="backdrop" tabindex="-1" hidden></a>
+    </header>
+
+    <main>
+        <article>
+            <h1>Share your resources!</h1>
+		<p>Fill out the form below to share one of your favorite layout resources.</p>
+		<form>
+			<fieldset>
+                <legend>Your contact information</legend>
+                <div class="flex">
+                    <label for="name" class="item1">Your name </label>
+                        <input type="text" id="name" autofocus class="item2">
+                    <label for="phone" class="item1">Phone number</label>
+                        <input type="tel" id="phone" placeholder="Don't forget the area code!" class="item2">
+                    <label for="email" class="item1">Email</label>
+                        <input type="email" id="email" class="item2">
+                </div>
+
+			</fieldset>
+			<fieldset>
+				<legend>About your resource </legend>
+                <div class="flex">
+                    <p class="item1">What kind of resource is it?</p>
+                    <div class="item2">
+                        <label>
+                            <input type="radio" name="resource" value="written" checked> Written article 
+                        </label>
+                        <label>
+                            <input type="radio" name="resource" value="podcast"> Podcast
+                        </label>
+                        <label>
+                            <input type="radio" name="resource" value="video"> Video 
+                        </label>
+                        <label>
+                            <input type="radio" name="resource" value="conference"> Conference
+                        </label>
+                        <label>
+                            <input type="radio" name="resource" value="other"> Some other type
+                        </label>
+                    </div>
+                </div>
+                <div class="flex">
+					<label for="rating" class="item1">How would you rate this resource?</label>
+						<select id="rating" class="item2">
+							<option selected>Select one...</option>
+							<option value="5star">Amazing, 5 stars</option>
+							<option value="4star">Helpful, 4 stars</option>
+							<option value="3star">OK, 3 stars</option>
+                            <option value="2star">Avoid if you can, 2 stars</option>
+                            <option value="1star">Pitiful, 1 star</option>
+                        </select>
+                </div>
+                <div class="flex">
+					<label for="comments" class="item1">Other details or comments:</label>
+						<textarea id="comments"  class="item2"></textarea>
+                </div>
+					<label>
+						<input id="subscribe" type="checkbox" value="subscribe">Add me to your email list
+					</label>				
+
+					<button type="submit">Submit</button>
+				</fieldset>
+			</form>
+        </article>
+        <aside>
+            <h3>Talk to us!</h3>
+            <i class="fas fa-comments"></i>
+            <address>Frontend Masters<br>
+                Minneapolis, MN</address>
+             <p>Email: support@frontendmasters.com</p>
+            <p><a href="https://www.frontendmasters.com" target="_blank" class="button">Visit our website</a></p>
+        </aside>
+    </main>
+
+</body>
+
+</html>

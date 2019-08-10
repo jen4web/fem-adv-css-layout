@@ -1,0 +1,9 @@
+CHAPTER 8: YOU TRY IT - TYPE SCALES
+
+Now integrate type scales into the home and inside pages we've been developing.
+
+To start you off, I've given you the code from your CodePen exercise in chapter 7 and attached that to your document. It doesn't look so good, though, so you'll probably want to modify things a bit.
+
+Make it look pretty, while leveraging a type scale to control the proportions of sizes on your page.
+
+NOTE: When you get the home page looking good, the inside page will likely be fine as well. However, feel free to make whatever inside page tweaks you wish!

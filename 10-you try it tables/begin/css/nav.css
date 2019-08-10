@@ -1,0 +1,201 @@
+/* CSS hamburger button code, h/t 
+https://medium.com/@heyoka/responsive-pure-css-off-canvas-hamburger-menu-aebc8d11d793 */
+
+
+header {
+    border-bottom: 4px solid #9EA9C1;
+}
+main {
+  border-top: 2px solid #dddddd;
+  margin-top: 0.5rem;
+
+}
+/* places hamburger button and logo next to each other */
+header .row {
+    display: flex;
+    flex-flow: row nowrap;
+}
+/* Screen reader only 
+https://www.scottohara.me/blog/2017/04/14/inclusively-hidden.html for more info */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+  }
+  
+  /* Hamburger button styling. "Button" is the bars icon from FontAwesome. */
+  .menu-toggle {
+    color: #333;
+    margin-right: 1rem;
+  }
+  
+  .menu-toggle:hover,
+  .menu-toggle:focus {
+    color: #C85028;
+  }
+  
+  /*
+   Mobile first - this is the mobile menu, positioned offscreen to start 
+  */
+
+  /* set the menu in a fixed position occupying 100% of the screen height, so you can't scroll away from it. Have nav scrollbars appear when needed. Any long nav names should be fully visible. */
+  .main-menu {
+    position: fixed;
+    display: none;
+    left: -200px;
+    top: 0;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: visible;
+    transition: left 0.3s ease;
+    z-index: 999;
+  }
+  /* turn off bullets, set width and background color of flyout menu. Width here and "left" property on main-menu should be the same absolute number */
+  .main-menu ul {
+    list-style: none;
+    margin: 0;
+    padding-top: 2.5em;
+    min-height: 100%;
+    width: 200px;
+    background-color: #1a1a1a;
+  }
+  
+  /* Make links block to make them fully clickable on mobile. Remember this is finger navigation, so include plenty of clickable area. All links get a bottom border */
+  .main-menu a {
+    display: block;
+    padding: .75rem;
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid #383838;
+  }
+  /* first link gets a border on top */
+  .main-menu li:first-child a {
+    border-top: 1px solid #383838;
+  }
+  
+  .main-menu a:hover,
+  .main-menu a:focus {
+    background: #333;
+    text-decoration: underline;
+  }
+  /* "close" button is positioned in the upper right corner. Button is the X / fa-close button from FontAwesome. If you want it bigger, do it here */
+  .main-menu .menu-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  /*
+THE MAGIC: When main-menu is targeted, show the menu by displaying it and setting left to 0 instead of -200px
+
+How is it targeted? Follow the HTML, line 18  <a href="#main-menu" id="main-menu-toggle" class="menu-toggle" aria-label="Open main menu">
+
+Note the href targets the main menu (both class and ID)
+  */
+  .main-menu:target {
+    display: block;
+    left: 0;
+    outline: none;
+  }
+  
+  /* when main menu is targeted (button is clicked), bring the X to the top so it can be clicked */
+  .main-menu:target .menu-close {
+    z-index: 1001;
+  }
+  
+  .main-menu:target ul {
+    position: relative;
+    z-index: 1000;
+  }
+  
+  /* 
+   We could us `.main-menu:target:after`, but
+   it wouldn't be clickable.
+
+   The backdrop is the link on line 42, with no content and hidden. Here we display it block, make it fixed, display it behind the menu (note Z values) and give it a color. It occupies any remaining space on the screen after the menu is displayed */
+  
+  .main-menu:target + .backdrop {
+    position: fixed;
+    display: block;  
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 998;
+    background: rgba(0,0,0,.85);
+    cursor: default;
+  }
+  
+  /*
+   Now set desktop behavior -- MQ value is set to where the navigation starts to wrap
+  */
+  @media (min-width: 800px) {
+      /* header and nav borders rearranged for desktop */
+      header, main {
+          border: none;
+          margin: 0;
+      }
+    nav {
+        border-top: 4px solid #9EA9C1;
+        border-bottom: 1px solid #dddddd;
+        padding: 0.3rem 0;
+    }
+    /* fa-bars and fa-close not needed on desktop so hide them */
+    .menu-toggle,
+    .main-menu .menu-close {
+      display: none;
+    }
+    
+    /* Undo positioning of off-canvas menu - remember this is hidden by default. Default position property is static, i.e. normal flow */
+    .main-menu {
+      position: static;
+      display: block;
+    }
+    /* Undo off-canvas styling */
+    .main-menu ul {      
+      padding: 0;
+      height: auto;
+      width: auto;
+      background: none;
+      overflow: hidden;
+      text-align: center;
+    }
+    /* display the li's horizontally */
+    .main-menu li {
+        display: inline-block;
+    }
+    /* add cute divider after each li, but not the last one */
+    .main-menu li:not(:last-child)::after {
+      content: " || ";
+  }
+/* above style the same as 
+    .main-menu li::after {
+        content: " || ";
+    }
+    .main-menu li:last-child::after {
+      content: "";
+  }
+*/
+    /* undo off canvas style */
+    .main-menu li:first-child a {
+        border-top: none;
+    }
+    /* desktop assumes a pointer display */
+    .main-menu a {
+      color: #C85028;
+      border-bottom: none;
+      display: inline;
+    }
+    /* Remove background from off-canvas styling, change colors */
+    .main-menu a:hover,
+    .main-menu a:focus {
+      background: none; 
+      color: #7E64BE;
+      text-decoration: none;
+    }
+  }

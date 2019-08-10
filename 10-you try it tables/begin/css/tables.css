@@ -1,0 +1,36 @@
+/* round of applause to Chris Coyer: https://css-tricks.com/responsive-data-tables/
+and Adrian Roselli: http://adrianroselli.com/2017/11/a-responsive-accessible-table.html#Responsive
+*/
+
+
+
+
+
+
+/* basic table styling */
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+tr:nth-child(odd) {
+    background-color: #f6dcd4;
+}
+th {
+    text-align: left;
+}
+
+
+/* generic page styling */
+aside ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+aside li {
+    margin-bottom: 1rem;
+}
+
+
+ 
+
+

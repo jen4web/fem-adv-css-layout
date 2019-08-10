@@ -1,0 +1,19 @@
+CHAPTER 7: TYPE SCALES
+
+Jen will talk about type scales using this site: https://type-scale.com/
+
+We will create a CodePen based on the output from the type scale website.
+
+Rewrite the code such that you leverage custom properties and calc.
+
+ANSWER: https://codepen.io/jen4web/pen/LwgVqM
+
+
+ADDITIONAL RESOURCES:
+
+Defining a Modular Type Scale for Web UI
+https://blog.prototypr.io/defining-a-modular-type-scale-for-web-ui-51acd5df31aa
+
+Exploring Responsive Type Scales: Finding your (Appropriate, Multi-Device and Vertical) Rhythm
+https://medium.com/sketch-app-sources/exploring-responsive-type-scales-cf1da541be54
+

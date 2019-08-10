@@ -1,0 +1,65 @@
+/* CSS hamburger button code, h/t 
+https://medium.com/@heyoka/responsive-pure-css-off-canvas-hamburger-menu-aebc8d11d793 
+
+Below is a starting navigation bar formatted for mobile and desktop. MQ is set to break where nav wraps once we've set up some typography... which we have not done yet. Trust the process :-)
+
+*/
+
+
+header {
+    border-bottom: 4px solid #9EA9C1;
+}
+main {
+  border-top: 2px solid #dddddd;
+  margin-top: 0.5rem;
+
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+}
+  
+nav a {
+    display: block;
+    padding: .75rem;
+    text-decoration: none;
+}
+
+  @media (min-width: 800px) {
+      /* header and nav borders rearranged for desktop */
+      header, main {
+          border: none;
+          margin: 0;
+      }
+    nav {
+        border-top: 4px solid #9EA9C1;
+        border-bottom: 1px solid #dddddd;
+        padding: 0.3rem 0;
+    }
+    nav ul {      
+      text-align: center;
+    }
+    /* display the li's horizontally */
+    nav li {
+        display: inline-block;
+    }
+    /* add cute divider after each li, but not the last one */
+    nav li:not(:last-child)::after {
+        content: " || ";
+    }
+/* above style the same as 
+      nav li::after {
+          content: " || ";
+      }
+      nav li:last-child::after {
+        content: "";
+    }
+*/
+    /* desktop assumes a pointer display */
+    nav a {
+      color: #C85028;
+      border-bottom: none;
+      display: inline;
+    }
+
+  }

@@ -1,0 +1,41 @@
+CHAPTER 1: WARM UP EXERCISE
+
+To get those juices flowing for CSS layouts, look at the attached image: https://s3-us-west-2.amazonaws.com/s.cdpn.io/3273620/grid1.png
+
+PART 1: FLEXBOX
+Code this layout using Flexbox. 
+Starting CodePen: https://codepen.io/jen4web/pen/dxqjKG
+
+RULES: 
+- Do not change the HTML!!! See if you can use selectors to do exactly what you want.
+- Code this for a desktop device only. Media queries are not required.
+
+HINT:
+- Remember to keep the "flex" in Flexbox. Don't use the "width" property for specifying box widths. 
+
+ANSWER: https://codepen.io/jen4web/pen/ZgMRJy
+
+
+
+PART 2: GRID
+
+If you have time, use at least one of the three different styles of CSS Grid syntax to code this layout. 
+Starting CodePen: https://codepen.io/jen4web/pen/dxqjKG
+
+RULES: 
+- Do not change the HTML!!! See if you can use selectors to do exactly what you want.
+- Code this for a desktop device only. Media queries are not required.
+
+HINTS: 
+Three types of Grid syntax might include:
+- line-based placement, like grid-column: 1 / 3; 
+- use the "span" keyword, like grid-column: span 2;
+- use grid area notation
+
+ANSWERS:
+- Grid with span syntax: https://codepen.io/jen4web/pen/MNqqwd
+- Grid with number syntax: https://codepen.io/jen4web/pen/LwJBXG
+- Grid with grid area syntax: https://codepen.io/jen4web/pen/qeMMba
+
+
+

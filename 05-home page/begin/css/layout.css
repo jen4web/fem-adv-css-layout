@@ -1,0 +1,21 @@
+/* grid system -- mobile first! */
+
+
+
+
+@media (min-width: 740px) {
+    .floatleft {
+        float: left;
+        margin: 0 1rem 1rem 0;
+    }
+    .floatright {
+        float: right;
+        margin: 0 0 1rem 1rem;
+    }
+}
+@media (min-width: 950px){
+
+}
+@media (min-width: 1200px) {
+    
+}

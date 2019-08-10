@@ -1,0 +1,45 @@
+CHAPTER 9: RESPONSIVE TABLES
+
+Part 1: Learn proper HTML coding of responsive data table and some basic CSS styling tricks.
+
+START: https://codepen.io/jen4web/pen/zgmwZd?editors=1100
+FINISH: https://codepen.io/jen4web/pen/qeJmro?editors=1100
+
+
+Part 2: Accessible side-scrolling for a table in responsive design
+It's easy to get the side scrolling, but with 10 extra seconds of work, we can also make it accessible.
+
+START: https://codepen.io/jen4web/pen/wVYeBW?editors=1100
+FINISH: https://codepen.io/jen4web/pen/KOGqwq?editors=1100
+
+
+Part 3: Tables that don't behave like tables
+
+Let's disassemble the table and tabular format, reassembling the information into something more like a report.
+
+START: https://codepen.io/jen4web/pen/NQOgGd?editors=1100
+END: https://codepen.io/jen4web/pen/GVYEoJ?editors=1100
+
+RESOURCES:
+- A Responsive Accessible Table
+http://adrianroselli.com/2017/11/a-responsive-accessible-table.html
+
+- Responsive Data Tables
+https://css-tricks.com/responsive-data-tables/
+
+- Responsive Data Table Roundup
+https://css-tricks.com/responsive-data-table-roundup/
+
+- Picking a Responsive Tables Solution
+https://cloudfour.com/thinks/picking-responsive-tables-solution/
+
+- CSS Only Responsive Data Tables https://dbushell.com/2016/03/04/css-only-responsive-tables/
+
+
+PRACTICE DATA SOURCES:
+
+- NASA Planetary Fact Sheet
+https://nssdc.gsfc.nasa.gov/planetary/factsheet/
+
+- USDA Food Composition Databases
+https://ndb.nal.usda.gov/ndb/

@@ -1,0 +1,12 @@
+CHAPTER 2: CSS-ONLY HAMBURGER BUTTON
+
+With a little warm up under our belts, let's move on to making a CSS-only hamburger button.
+
+RESOURCES: 
+- Responsive, Pure CSS Off-Canvas Hamburger Menu: Building a progressively enhanced mobile menu that works without JavaScript
+https://medium.com/@heyoka/responsive-pure-css-off-canvas-hamburger-menu-aebc8d11d793
+
+- Tasty CSS-animated hamburgers
+https://jonsuh.com/hamburgers/
+(Consider swapping in one of these instead of the FontAwesome hamburger above)
+

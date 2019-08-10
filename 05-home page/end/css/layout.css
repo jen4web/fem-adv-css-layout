@@ -1,0 +1,129 @@
+/* developer list default layout */
+#devs ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    --columns: 2;
+}
+/* grid system -- mobile first! */
+main {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  --columns: 16;
+}
+section,
+#inside article,
+#inside aside,
+#devs li {
+    --width: 16;
+    --gap-constant: 0.3%;
+	--initialbasis: calc(var(--width, 0) / var(--columns, 16) * 100%);
+    --gap: calc((var(--columns, 16) - var(--width, 0)) * var(--gap-constant, 0.3%));
+	flex-basis: calc(var(--initialbasis) - var(--gap));
+}
+#devs li {
+    --width: 1;
+    --gap-constant: 3%;
+}
+
+
+/* tablet display - change columns to 11, place rows 3 and 4 on the bottom, full width */
+@media (min-width: 740px) {
+    /* keep our math working, move 3rd and 4th columns to bottom */
+    main {
+        --columns: 11;
+    }
+    /* row 1: #first 5 - #main 6,
+    row 2 #devs: 11,
+    row 3 #resources: 11
+    Change ordering to make that work */
+    #first {
+        --width: 5;
+        order: 1;
+    }
+    #main {
+        --width: 6;
+        order: 2;
+    }
+    #devs{
+        --width: 11;
+        order: 3;
+    }
+    #devs ul {
+        --columns: 5;
+    }
+    #resources {
+        --width: 11;
+        order: 4;
+    }
+
+    .floatleft {
+        float: left;
+        margin: 0 1rem 1rem 0;
+    }
+    .floatright {
+        float: right;
+        margin: 0 0 1rem 1rem;
+    }
+    #inside article {
+        --width: 7;
+    }
+    #inside aside {
+        --width: 4;
+    }
+}
+@media (min-width: 950px){
+    /* keep our math working, move 3rd column to bottom */
+    main {
+        --columns: 14;
+    }
+    /* row 1: #first 5 - #main 6 - #resources 3,
+    row 2: #devs 14
+    Change ordering to make that work */
+    #devs{
+        --width: 14;
+        order: 4;
+    }
+    #resources {
+        --width: 3;
+        order: 3;
+    }
+    #inside article {
+        --width: 10;
+    }
+    #inside aside {
+        --width: 4;
+    }
+    #inside #table article {
+        --width: 14;
+    }
+    #inside #table aside {
+        --width: 14;
+    }
+}
+@media (min-width: 1200px) {
+    #devs ul {
+       --columns: 1;
+    }
+    main {
+        --columns: 16;
+    }
+    /* #first 5 - #main 6 - #devs 2 - #resources 3 cols wide, make sure ordering is correct */
+    #devs{
+        --width: 2;
+        order: 3;
+    }
+    #resources {
+        --width: 3;
+        order: 4;
+    }
+    #inside article,
+    #inside #table article {
+        --width: 12;
+    }
+    #inside aside,
+    #inside #table aside {
+        --width: 4;
+    }
+}

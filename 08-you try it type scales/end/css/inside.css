@@ -1,0 +1,47 @@
+.circle {
+    border-radius: 50%;
+    border: 5px solid #3D2C67;
+    float: left;
+    max-width: 155px;
+    shape-outside: circle(26.79% at 95px 96px);
+    shape-margin: 2rem;
+    margin-right: 2rem;
+}
+blockquote {
+    margin: 0;
+}
+blockquote cite {
+    font-weight: bold;
+}
+.fa-book-open {
+    display: block;
+    color: #C85028;
+    font-size: 100px;
+    text-align: center;
+}
+aside,
+aside p {
+    font-size: var(--text-sm);
+}
+aside {
+    background-color: #eee;
+    border: 1px solid #ccc;
+    padding: 1rem;
+}
+article {
+    border-bottom: none;
+}
+.button {
+    background-color: #C85028;
+    color: white;
+    font-size: var(--h2);
+    padding: 0.5rem;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    display: block;
+    text-align: center;
+}
+.button:hover {
+    color: white;
+    background-color: #3D2C67;
+}

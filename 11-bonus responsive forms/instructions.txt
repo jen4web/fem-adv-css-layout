@@ -1,0 +1,17 @@
+CHAPTER 11: BONUS! RESPONSIVE FORMS
+
+Now that you have this AMAZING COOL new bag of tricks, can you make a responsive form?
+
+Check out form.html as some starting form markup. (The form doesn't submit anywhere.) Form.css is available for the form styling, and it's suitable for a mobile layout.
+
+Now see if you can apply the same layout principles you've applied in other parts of the course to the form. Suggested layout screenshots are attached.
+
+HINT: 
+
+- Remember it's all about children and parents, flex items and flex containers. Identify the children/items, and then figure out where the parent must be in order to make the layout work.
+
+- Almost all of the code is fundamentally written for you already for this example. Now you need to apply it to this specific circumstance. 
+
+- You may need to modify the HTML with <div> tags and maybe some classes, to keep the CSS neater.
+
+

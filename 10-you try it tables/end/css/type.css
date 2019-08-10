@@ -1,0 +1,56 @@
+:root {
+    --base-size: 1rem;
+    --type-scale: 1.33;
+    --h3: calc(var(--base-size) * var(--type-scale));
+    --h2: calc(var(--h3) * var(--type-scale));
+    --h1: calc(var(--h2) * var(--type-scale));
+    --text-sm: calc(var(--base-size) / var(--type-scale));
+    --header-margin: 0 0 1rem 2rem;
+  }
+  
+  h1 {font-size: var(--h1);}
+  
+  h2 {font-size: var(--h2);}
+  
+  h3 {font-size: var(--h3);}
+  
+  p {font-size: var(--base-size);}
+  
+  small, .text-small {
+      font-size: var(--text-sm);
+}
+  
+/* display the li's horizontally */
+.main-menu li {
+    font-size: var(--text-sm);
+}
+.menu-toggle {
+    font-size: var(--h1);
+}
+section > h1 {
+    font-size: var(--text-sm);
+}
+header h1 {
+    font-size: calc(var(--h1) * var(--type-scale));
+}
+header h2 {
+    font-size: var(--text-sm);
+    margin: var(--header-margin);
+}
+#resources h1 {
+    font-size: var(--h2);
+}
+#resources h1 small {
+    font-size: var(--base-size);
+}
+  @media (min-width: 200px) {
+    :root {
+      --type-scale: 1.125;
+    }
+}
+  @media (min-width: 740px) {
+    :root {
+      --type-scale: 1.25;
+      --header-margin: 0 0 1rem 8rem;    
+  }
+}

@@ -1,0 +1,24 @@
+CHAPTER 4: FLEXBOX GRID PROTOTYPE
+
+This example should look familiar to you - we coded it several times in the original layouts course.
+
+START: https://codepen.io/jen4web/pen/WVaNep
+
+Take a few minutes to remind yourself of this code. Essentially, we did the following:
+
+- at mobile dimensions, all cells are 92% wide with 4% margin on either side
+
+- at tablet dimensions, some are 44% wide and others are 92% wide
+
+- at desktop dimensions, we have 4 cells across, 2-2, 1-3, 4 (a full row), and a 1-2-1 arrangement, with some ordering in use.
+
+Now we will rewrite the code with calc and custom properties to achieve the following:
+
+- We don't have to repeat ourselves so often in the media queries
+- We don't have to use higher math to figure out the total row layout
+- We drop margin and work with a flexible gap instead... it is, after all, Flexbox!
+
+
+ANSWER: https://codepen.io/jen4web/pen/vPGRNW
+
+

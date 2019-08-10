@@ -1,0 +1,55 @@
+address {
+    font-size: var(--h3);
+    font-style: normal;
+    margin-top: 1rem;
+}
+p, [for="rating"] {
+	margin-bottom: 0;
+	margin-top: 2rem;
+}
+fieldset, #rating {
+	margin-bottom: 2rem;
+}
+fieldset {
+	border: 1px solid black;
+	border-radius: 10px;
+}
+legend {
+	font-weight: bold;
+	font-size: var(--h3);
+	margin-top: 1.5rem;
+	margin-bottom: 1rem;
+	display: block;
+}
+label {
+	display: block;
+}
+input:not([type="radio"]):not([type="checkbox"]), 
+textarea {
+	display: block;
+	margin-bottom: 2rem;
+	width: 20rem;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: var(--font-size);
+	border-radius: 10px;
+	padding: 0 1rem;
+}
+textarea {
+	height: 10rem;
+	padding: 1rem;
+}
+select {
+	font-size: var(--font-size);
+}
+button {
+	margin: 2rem 0;
+	background-color: #BB342F;
+	color: white;
+	border: none;
+	font-size: 1rem;
+	padding: 0.5rem 1rem;
+	border-radius: 10px;
+}
+button:hover {
+	background-color: #9A2B27;
+}

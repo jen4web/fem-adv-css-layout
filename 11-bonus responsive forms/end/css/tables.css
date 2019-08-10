@@ -1,0 +1,108 @@
+/* round of applause to Chris Coyer: https://css-tricks.com/responsive-data-tables/
+and Adrian Roselli: http://adrianroselli.com/2017/11/a-responsive-accessible-table.html#Responsive
+*/
+
+
+/* Force table to not be like tables anymore */
+table, thead, tbody, th, tr { 
+    display: block; 
+}
+
+/* Hide table headers (but not display: none;, for accessibility -- sighted users will see labels below) */
+thead tr { 
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+tr { border: 1px solid #ccc; }
+
+td {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0.5rem;
+}
+td:before { 
+    /* this is weird but it works - not clear if this is a flexbox bug? */
+    font-weight: bold; 
+    flex-basis: 50%;
+    margin-right: 2rem;
+}
+td:nth-of-type(1):before { content: "Celestial Body: "; }
+td:nth-of-type(2):before { content: "Mass (10^24kg): "; }
+td:nth-of-type(3):before { content: "Diameter (km): "; }
+td:nth-of-type(4):before { content: "Rotation Period (hours): "; }
+td:nth-of-type(5):before { content: "Length of Day (hours): "; }
+td:nth-of-type(6):before { content: "Distance from Sun (10^6 km): "; }
+td:nth-of-type(7):before { content: "Orbital Period (days): "; }
+td:nth-of-type(8):before { content: "Mean Temperature (C): "; }
+td:nth-of-type(9):before { content: "Number of Moons: "; }
+td:nth-of-type(10):before { content: "Ring System? "; }
+td:nth-of-type(11):before { content: "Global Magnetic Field? "; }
+
+/* let the table scroll as a backup */
+.tablescroll {
+    overflow-x: auto;
+}
+caption {
+    width: 100%;
+    text-align: left;
+    font-weight: bold;
+    font-size: var(--h2);
+    padding: 0.5rem;
+}
+/* For wider dimensions, change our layout so the table can take the full width of the screen. */
+/* table MQ's */
+@media (min-width: 950px) {
+    /* td:before is not specific enough to override the original declarations, thus this method */
+    td:nth-of-type(odd):before,
+    td:nth-of-type(even):before {
+        content: "";
+        margin-right: 0;
+    }
+    thead tr { 
+        position: static;
+    }
+    thead, tbody {
+        display: table-row-group;
+    }
+    th, td { 
+        display: table-cell; 
+        padding: 0.5em;
+    }
+    tr {
+        display: table-row;
+    }
+    table{
+        display: table;
+    }
+}
+
+
+/* basic table styling */
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+tbody tr:nth-child(odd) {
+    background-color: #f6dcd4;
+}
+th {
+    text-align: left;
+}
+
+
+/* generic page styling */
+aside ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+aside li {
+    margin-bottom: 1rem;
+}
+
+
+ 
+
+

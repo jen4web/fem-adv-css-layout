@@ -1,0 +1,38 @@
+CHAPTER 5: APPLY CALC/CUSTOM PROPERTIES TO HOME LAYOUT
+
+BOOM goes Bootstrap!!!
+
+Check the chapter 5 folder for comps for how the site should look at extra large, large, medium, and small dimensions.
+
+Use Flexbox, calc(), and custom properties to complete this task.
+
+A good place to start is the chapter 4 answer. Remember that we had this logic:
+
+.row {
+	margin: 0;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	--columns: 4;
+}
+[class*="col-"] {
+  --width: 4;
+  --initialbasis: calc(var(--width, 0) / var(--columns, 4) * 100%);
+  --gap: calc((var(--columns) - var(--width)) * 1%);
+  flex-basis: calc(var(--initialbasis) - var(--gap));
+}
+
+In your case, do the following:
+
+- What is "row" and "col-" in this HTML? Make sure the selectors reflect what you're doing. Remember flex containers/parents and flex items/children -- the relationship is critical!
+
+- The designer said this is a 16-column layout, so let's work with that. What do we need to change?
+
+- What if we want a different size gap?
+
+- What changes in the media queries?
+
+
+BONUS: Now that you've applied this to the major page layout, could you use this same logic to the developers column and its changes in layout?
+
+
