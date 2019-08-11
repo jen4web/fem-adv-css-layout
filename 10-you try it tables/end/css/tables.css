@@ -50,6 +50,7 @@ caption {
     font-weight: bold;
     font-size: var(--h2);
     padding: 0.5rem;
+    display: block;
 }
 /* For wider dimensions, change our layout so the table can take the full width of the screen. */
 /* table MQ's */
@@ -76,13 +77,18 @@ caption {
     table{
         display: table;
     }
+    caption {
+        font-size: var(--font-size);
+    }
+
 }
 
 
 /* basic table styling */
+
 table {
     border-collapse: collapse;
-    border: 1px solid black;
+    border: 1px solid #ccc;
 }
 tbody tr:nth-child(odd) {
     background-color: #f6dcd4;

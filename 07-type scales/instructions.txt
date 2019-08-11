@@ -17,3 +17,15 @@ https://blog.prototypr.io/defining-a-modular-type-scale-for-web-ui-51acd5df31aa
 Exploring Responsive Type Scales: Finding your (Appropriate, Multi-Device and Vertical) Rhythm
 https://medium.com/sketch-app-sources/exploring-responsive-type-scales-cf1da541be54
 
+Responsive Designs and CSS Custom Properties: Defining Variables and Breakpoints
+https://css-tricks.com/responsive-designs-and-css-custom-properties-defining-variables-and-breakpoints/
+
+A More Modern Scale for Web Typography
+http://typecast.com/blog/a-more-modern-scale-for-web-typography
+
+FontPair (help pick fonts that work together)
+https://fontpair.co/
+
+30 Great Font Combinations For Your Next Design Project
+https://digitalsynopsis.com/design/best-font-combinations-typeface-pairings-guide/
+

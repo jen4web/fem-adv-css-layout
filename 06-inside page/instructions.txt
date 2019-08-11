@@ -4,6 +4,8 @@ I've given you book.html, an inside page layout for the website. It has its own 
 
 Go back to layout.css and see if you can edit this stylesheet to apply to the book.html page.
 
+Screenshots for the book page are included so you know how the page should look.
+
 HINTS:
 
 - Where are the flex containers/parents and the flex items/children?

@@ -1,10 +1,11 @@
 CHAPTER 1: WARM UP EXERCISE
 
-To get those juices flowing for CSS layouts, look at the attached image: https://s3-us-west-2.amazonaws.com/s.cdpn.io/3273620/grid1.png
+To get those juices flowing for CSS layouts, look at the image in this folder or online: https://s3-us-west-2.amazonaws.com/s.cdpn.io/3273620/grid1.png
 
 PART 1: FLEXBOX
 Code this layout using Flexbox. 
-Starting CodePen: https://codepen.io/jen4web/pen/dxqjKG
+
+START: https://codepen.io/jen4web/pen/dxqjKG
 
 RULES: 
 - Do not change the HTML!!! See if you can use selectors to do exactly what you want.
