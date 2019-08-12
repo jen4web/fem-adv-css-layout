@@ -36,3 +36,7 @@ In your case, do the following:
 BONUS: Now that you've applied this to the major page layout, could you use this same logic to the developers column and its changes in layout?
 
 
+RESOURCES:
+
+There are so many resources for calc, custom properties, Flexbox, and these methodologies, I've listed them on their own page:
+https://codepen.io/jen4web/post/rwd20readinglist

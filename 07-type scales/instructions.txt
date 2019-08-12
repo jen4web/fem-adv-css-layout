@@ -23,6 +23,12 @@ https://css-tricks.com/responsive-designs-and-css-custom-properties-defining-var
 A More Modern Scale for Web Typography
 http://typecast.com/blog/a-more-modern-scale-for-web-typography
 
+100% Responsive Typography System using a Modular Scale
+https://www.codementor.io/ricardozea/100-responsive-typography-system-using-a-modular-scale-s5rhft58g
+
+Responsive And Fluid Typography With vh And vw Units
+https://www.smashingmagazine.com/2016/05/fluid-typography/
+
 FontPair (help pick fonts that work together)
 https://fontpair.co/
 
