@@ -1,14 +1,3 @@
-/* scroll for starting CSS and hints; instructions in JS window -> */
-
-/* HINT: Three types of Grid syntax might include:
-- line-based placement, like grid-column: 1 / 3; 
-- use the "span" keyword, like grid-column: span 2;
-- use grid area notation
-
-
-
-
-
 /* presentational CSS, no answers here -- ignore below this line */
 div > div {
   font-size: 5rem;
