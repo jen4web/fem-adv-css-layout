@@ -1,0 +1,27 @@
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.wrapper > * {
+  margin-bottom: 1rem;
+}
+
+.a,
+.h {
+  flex-basis: 66%;
+}
+
+.b,
+.d,
+.e,
+.f,
+.g {
+  flex-basis: 32%;
+}
+
+.c {
+  flex: 100%;
+}
