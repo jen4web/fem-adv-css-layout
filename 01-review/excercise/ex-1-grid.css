@@ -1,0 +1,14 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+.a,
+.h {
+  grid-column: span 2;
+}
+
+.c {
+  grid-column: span 3;
+}

@@ -1,0 +1,30 @@
+/* presentational CSS, no answers here -- ignore below this line */
+div > div {
+  font-size: 5rem;
+  text-align: center;
+  color: white;
+}
+.a {
+  background-color: #fcb10f;
+}
+.b {
+  background-color: #801340;
+}
+.c {
+  background-color: #4d2975;
+}
+.d {
+  background-color: #244479;
+}
+.e {
+  background-color: #55b4af;
+}
+.f {
+  background-color: rgba(128, 19, 64, 0.7);
+}
+.g {
+  background-color: rgba(77, 41, 117, 0.5);
+}
+.h {
+  background-color: rgba(252, 177, 15, 0.7);
+}
